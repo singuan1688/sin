@@ -328,6 +328,87 @@ src="https://www.facebook.com/tr?id=2328506604640129&ev=PageView&noscript=1"
       font-weight: 500;
     }
 
+    /* ===== 無當品專案 ===== */
+    .noitem-panel {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 32px;
+      align-items: center;
+      padding: 34px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--gold);
+      border-radius: 14px;
+    }
+
+    .noitem-panel h2 {
+      margin-bottom: 10px;
+    }
+
+    .noitem-panel .lead {
+      margin: 0 0 20px;
+      color: var(--mute);
+    }
+
+    .noitem-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .noitem-list li {
+      position: relative;
+      padding-left: 30px;
+      font-weight: 500;
+    }
+
+    .noitem-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .5em;
+      width: 16px;
+      height: 8px;
+      border-left: 3px solid var(--blue);
+      border-bottom: 3px solid var(--blue);
+      transform: rotate(-45deg);
+    }
+
+    .noitem-side {
+      padding: 24px;
+      background: var(--ink);
+      color: var(--hero-tx);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .noitem-side h3 {
+      margin-bottom: 6px;
+      font-size: 22px;
+      color: var(--gold);
+    }
+
+    .noitem-side p {
+      margin: 0 0 18px;
+      font-size: 15px;
+      color: #d9d4c4;
+    }
+
+    .noitem-note {
+      margin: 18px 0 0;
+      font-size: 13px;
+      color: var(--mute);
+    }
+
+    @media (max-width: 720px) {
+      .noitem-panel {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+      }
+    }
+
     /* ===== 流程 ===== */
     .steps {
       display: grid;
@@ -671,6 +752,30 @@ src="https://www.facebook.com/tr?id=2328506604640129&ev=PageView&noscript=1"
             <li>銀元古幣</li>
             <li>名牌服飾</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 無當品專案（條件請依實際作業調整） ===== -->
+  <section>
+    <div class="wrap">
+      <div class="noitem-panel">
+        <div>
+          <h2>無當品專案</h2>
+          <p class="lead">手邊沒有適合抵押的物品？先用 LINE 說明你的狀況，由專人幫你評估。</p>
+          <ul class="noitem-list">
+            <li>不良信用不影響承做</li>
+            <li>有保人可增貸或降息</li>
+            <li>可彈性還款，一次結清或分期攤還</li>
+            <li>在地30年，條件事先說明清楚</li>
+          </ul>
+          <p class="noitem-note">是否可辦理、額度與月息，依個人狀況評估及雙方約定為準。</p>
+        </div>
+        <div class="noitem-side">
+          <h3>先問問看，不用先帶東西</h3>
+          <p>傳訊息告訴我們你的需求，我們會回覆可行的方案。</p>
+          <a class="btn" href="https://line.me/ti/p/~leo00118" target="_blank" rel="noopener">LINE 詢問無當品專案</a>
         </div>
       </div>
     </div>
